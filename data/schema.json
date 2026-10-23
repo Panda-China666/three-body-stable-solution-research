@@ -1,0 +1,29 @@
+{
+  "solution_count": 139,
+  "units": {
+    "G": 1,
+    "energy": -1
+  },
+  "positions": "3x2 array: inertial barycentric [x,y] for bodies1,2,3 at t=0",
+  "velocities": "3x2 array: [vx,vy] for bodies1,2,3 at t=0",
+  "relative_period": "tau, with state(tau)=R(rotation_angle_radians)state(0)",
+  "rotation_number": "coprime signed numerator p and positive denominator q; angle=2*pi*p/q",
+  "inertial_period": "T=q*tau",
+  "rotation_operator": "R(angle)=[[cos(angle),-sin(angle)],[sin(angle),cos(angle)]] applied to every position and velocity",
+  "jacobi_canonical_state_order": [
+    "Q1x",
+    "Q1y",
+    "Q2x",
+    "Q2y",
+    "P1x",
+    "P1y",
+    "P2x",
+    "P2y"
+  ],
+  "jacobi_coordinates": {
+    "Q1": "sqrt(m1*m2/(m1+m2))*(r2-r1)",
+    "Q2": "sqrt(m3*(m1+m2)/(m1+m2+m3))*(r3-(m1*r1+m2*r2)/(m1+m2))",
+    "P1_P2": "time derivatives of Q1,Q2"
+  },
+  "relative_nontrivial_floquet_multipliers": "6 complex multipliers as [real,imaginary] pairs after energy and momentum symmetry reduction for spatial perturbations"
+}
